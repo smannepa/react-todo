@@ -10,6 +10,8 @@ $(document).foundation();
 require('style!css!sass!applicationStyles');
 
 ReactDOM.render(
-  <TodoApp/>,
+  <Router history={hashHistory}>
+    <Route path="/" component={TodoApp}/>
+  </Router>,
   document.getElementById('app')
 );
