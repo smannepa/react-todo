@@ -4,7 +4,6 @@ var moment = require('moment');
 
 var TodoList = require('TodoList');
 var AddTodo = require('AddTodo');
-var Nav = require('Nav');
 var TodoSearch = require('TodoSearch');
 var TodoAPI = require('TodoAPI');
 
@@ -54,13 +53,16 @@ var TodoApp = React.createClass({
     var filteredTodos = TodoAPI.filterTodos(todos, showCompleted, searchText);
     return(
       <div>
-        <Nav/>
+        <div>
+          <h1 className="page-title">Todo App</h1>
+        </div>
         <div className="row">
           <div className="small-10 small-centered medium-8 large-6 columns">
-            <h1 className="page-title">Todo App</h1>
-            <TodoSearch onSearch={this.handleSearch}/>
-            <TodoList todos={filteredTodos} onToggle={this.handleToggle}/>
-            <AddTodo onAddTodo={this.handleAddTodo}/>
+            <div className="container">
+              <TodoSearch onSearch={this.handleSearch}/>
+              <TodoList todos={filteredTodos} onToggle={this.handleToggle}/>
+              <AddTodo onAddTodo={this.handleAddTodo}/>
+            </div>
           </div>
         </div>
       </div>
