@@ -3,7 +3,7 @@
 }
 .top-bar{
   .menu-text {
-    color: $complementary-color;
+    color: $white;
   }
   .menu > .menu-text > a {
     display: inline;
@@ -15,6 +15,5 @@
   }
   .nav-tab {
     border-width: 0px 1px;
-    border-color: $secondary-color;
   }
 }
