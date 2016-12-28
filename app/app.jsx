@@ -12,10 +12,6 @@ store.subscribe(() => {
   console.log('New state: ', store.getState());
 });
 
-store.dispatch(actions.addTodo('Go bowl'));
-store.dispatch(actions.setSearchText('go'));
-store.dispatch(actions.toggleShowCompleted());
-
 //load foundation
 $(document).foundation();
 //load custom css
