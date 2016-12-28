@@ -13,9 +13,9 @@ describe('Actions', () => {
   it('Should generate add todo action', () => {
     var action = {
       type: 'ADD_TODO',
-      todoText: 'Some todo text'
+      text: 'Some todo text'
     };
-    var res = actions.addTodo(action.todoText);
+    var res = actions.addTodo(action.text);
     expect(res).toEqual(action);
   });
   it('Should generate toggle show completed action', () => {

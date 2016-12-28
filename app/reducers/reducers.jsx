@@ -40,6 +40,8 @@ export var todosReducer = (state = [], action) => {
             completed: nextCompleted,
             completedAt: nextCompleted ? moment().valueOf() : undefined
           };
+        } else {
+          return todo;
         }
       });
     default:

@@ -9,10 +9,10 @@ export var toggleShowCompleted = () => {
     type: 'TOGGLE_SHOW_COMPLETED',
   };
 };
-export var addTodo = (todoText) => {
+export var addTodo = (text) => {
   return {
     type: 'ADD_TODO',
-    todoText
+    text
   };
 };
 export var toggleTodo = (todoId) => {
