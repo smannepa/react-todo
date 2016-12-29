@@ -1,11 +1,11 @@
 {
-  "name": "reacttimer",
+  "name": "Todooy",
   "version": "1.0.0",
-  "description": "React Timer App",
+  "description": "Simple Todo App",
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test karma start",
-    "build": "webpack",
+    "build": "webpack -p",
     "start": "npm run build && node server.js"
   },
   "author": "susheel.mannepalli@gmail.com",
@@ -48,6 +48,5 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.8.1",
     "mocha": "^3.2.0"
-
   }
 }
