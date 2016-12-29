@@ -10,8 +10,11 @@ var TodoApp = React.createClass({
   render: function () {
     return(
       <div>
+        <div className="page-actions">
+          <a href="#">Logout</a>
+        </div>
         <div>
-          <h1 className="page-title">Todo App</h1>
+          <h1 className="page-title">Todooy</h1>
         </div>
         <div className="row">
           <div className="small-10 small-centered medium-8 large-6 columns">
