@@ -14,7 +14,7 @@ export var TodoList = React.createClass({
           <p className="container__message">Nothing to do</p>
         );
       }
-      return TodoAPI.filterTodos(todos, showCompleted, searchText).map((todo) => {
+      return filteredTodos.map((todo) => {
         return (
           <Todo key={todo.id} {...todo}/>
         );

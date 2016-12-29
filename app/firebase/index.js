@@ -2,11 +2,11 @@ import firebase from 'firebase';
 
 try {
   var config = {
-    apiKey: "AIzaSyCX3MYu4klr5VZ75Om3nYi3uPkj8XeFNIw",
-    authDomain: "smannepa-todo-app.firebaseapp.com",
-    databaseURL: "https://smannepa-todo-app.firebaseio.com",
-    storageBucket: "smannepa-todo-app.appspot.com",
-    messagingSenderId: "1070708165165"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID
   };
 
   firebase.initializeApp(config);
