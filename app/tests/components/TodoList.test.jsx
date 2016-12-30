@@ -1,9 +1,9 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var {Provider} = require('react-redux');
-var expect = require('expect');
-var $ = require('jQuery');
-var TestUtils = require('react-addons-test-utils');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Provider} from 'react-redux';
+import expect from 'expect';
+import $ from 'jQuery';
+import TestUtils from 'react-addons-test-utils';
 
 import {configure} from 'configureStore';
 import ConnectedTodoList, {TodoList} from 'TodoList';
@@ -43,7 +43,7 @@ describe('TodoList', () => {
   });
   it('Should render empty message if no todos', () => {
     var todos = [];
-    var todoList = TestUtils.renderIntoDocument(<TodoList todos={todos}/>);
+    var todoList = TestUtils.renderIntoDocument(<TodoList todos={todos} showCompleted={false} searchText={''}/>);
     var $el = $(ReactDOM.findDOMNode(todoList));
 
     expect($el.find('.container__message').length).toBe(1);
