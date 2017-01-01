@@ -9,7 +9,7 @@ import * as actions from 'actions';
 import {Login} from 'Login';
 
 describe('Login', () => {
-  it('Should exixst', () => {
+  it('Should exist', () => {
     expect(Login).toExist();
   });
 });
